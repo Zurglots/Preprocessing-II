@@ -1,13 +1,25 @@
 .home {
+  margin: 15px auto;
+  // br {
+  //   border: 2px dashed @navigation-border;
+  //   width: 100vw;
+  // }
 
+  .top-content {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      object-fit: contain;
+      padding-bottom: 25px;
+    }
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -57,5 +69,13 @@
       width: 30%;
       margin-bottom: 30px;
     }
+    button {
+      width: 100%;
+      border-radius: 15px;
+      height: 45px;
+      background-color: @button-bg;
+      color: @main-bg;
+      font-size: 1.9rem;
+    }
   }
-}// home
+} // home

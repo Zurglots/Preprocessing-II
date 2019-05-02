@@ -1,1 +1,28 @@
 // Navigation Styles here
+
+header {
+  .basic-layout(space-between, center);
+  flex-direction: row;
+  width: 100%;
+  margin-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 2px dashed @navigation-border;
+
+  nav {
+    .basic-layout(space-between, center);
+    width: 40%;
+
+    a {
+      width: 35%;
+      height: 100%;
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: @font-color;
+    }
+  }
+}
+
+div.logo-txt {
+  display: flex;
+  //   margin-top: 25px;
+}
