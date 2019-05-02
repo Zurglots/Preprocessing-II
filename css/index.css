@@ -234,6 +234,8 @@ div.logo-txt {
   display: flex;
   flex-direction: column;
   margin: 0px 20px 20px 20px;
+  border-bottom: 2px dashed #c0c0c0;
+  padding-bottom: 10px;
 }
 .home .top-content img {
   object-fit: contain;
@@ -295,8 +297,23 @@ div.logo-txt {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    padding-bottom: 30px;
+    width: 90%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .content-destination img {
+    width: 99%;
+    object-fit: cover;
+    margin: auto;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -304,9 +321,22 @@ div.logo-txt {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
 }
 .home .content-pick button {
   width: 100%;
